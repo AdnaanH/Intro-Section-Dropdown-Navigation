@@ -1,0 +1,122 @@
+:root{
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+}
+*{
+    font-family: 'Epilogue', sans-serif;
+}
+body{
+    position: relative;
+    margin: 35px 100px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--Almost-White);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3em;
+}
+main{
+    display: flex;
+    margin: 0;
+}
+.right-side{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+.main-nav ul{
+    display: flex;
+    gap: 3em;
+    list-style: none;
+}
+.main-nav ul li{
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--Medium-Gray);
+    cursor: pointer;
+}
+.main-nav ul li:hover{
+    color: var(--Almost-Black);
+}
+.dropdown::after{
+    content: url(./icon-arrow-down.svg);
+    padding-left: 10px;
+}
+.dropdown::after[open]::after {
+    content: url(./icon-arrow-up.svg);
+    padding-left: 10px;
+}
+summary:hover{
+    color: var(--Almost-Black);
+}
+.left-side{
+    display: flex;
+    gap: 1em;
+}
+.login{
+    border: none;
+    background-color: transparent;
+}
+.signup{
+    padding: 5px;
+    width: 6em;
+    border-radius: 8px;
+    border: 2px solid var(--Medium-Gray);
+    color: var(--Medium-Gray);
+    background-color: transparent;
+}
+.container{
+    margin: 20px auto;
+    display: flex;
+    gap: 4em;
+    width: 90%;
+}
+.main-section{
+    margin-top: 1em;
+    display: grid;
+    gap: 2.5em;
+    width: 60%;
+}
+.content h1{
+    font-weight: 700;
+    color: var(--Almost-Black);
+    font-size: 4em;
+    line-height: 0.8em;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+.content p{
+    font-weight: 500;
+    font-size: 1.1em;
+    color: var(--Medium-Gray);
+    width: 20em;
+}
+.hero-section{
+    width: 40%;
+}
+.hero-section img{
+    width: 23em;
+    height: 30em;
+}
+.learn-mre{
+    background-color: var(--Almost-Black);
+    border-radius: 12px;
+    color: var(--Almost-White);
+    width: 130px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+.learn-mre:hover{
+    background-color: var(--Almost-White);
+    border: 2px solid var(--Almost-Black);
+    color: var(--Medium-Gray);
+}

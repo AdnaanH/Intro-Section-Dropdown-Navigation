@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <!-- Favicon Linked Below -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+
+  <!-- Title Linked Below -->
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Stylesheet Linked Below -->
+  <link rel="stylesheet" type="text/css" href="./style.css">
+
+  <!-- Google Fonts Linked Below-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    .attribution { font-size: 13px; text-align: center; font-weight: 800; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Logo & Main Nav Area-->
+    <div class="right-side">
+      <img src="./logo.svg" alt="logo">
+      <div class="main-nav">
+        <ul>
+          <li class="nav dropdown">Features</li>
+            <!--
+              <ul>
+                <li><img src="./icon-todo.svg" alt="to do">Todo List</li>
+                <li><img src="./icon-calendar.svg" alt="calender">Calendar</li>
+                <li><img src="./icon-reminders.svg" alt="reminders">Reminders</li>
+                <li><img src="./icon-planning.svg" alt="planning">Planning</li>
+              </ul>
+            -->                 
+          <li class="nav dropdown">Company</li>
+            <!--
+              <ul>
+                <p>History</p>
+                <p>Our Team</p>
+                <p>Blog</p>
+              </ul>
+            -->              
+          <li class="nav">Careers</li>
+          <li class="nav">About</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- LogIn & SignUp Area -->
+    <div class="left-side">
+      <button class="login">Login</button>
+      <button class="signup">Register</button>
+    </div>
+  </header>
+  <main>
+    <!-- The Main Content -->
+    <div class="container">
+      <!-- Introduction Content -->
+      <div class="main-section">
+        <!-- Main Site Content-->
+        <div class="content">
+          <div>
+            <h1>Make <br> remote work</h1>
+            <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+          </div>
+          
+          <div>
+            <button class="learn-mre">Learn more</button>
+          </div>          
+        </div>
+
+        <!-- Clients Logos-->
+        <div class="clients">
+          <img src="./client-databiz.svg" alt="databiz">
+          <img src="./client-audiophile.svg" alt="audiophile">
+          <img src="./client-meet.svg" alt="meet">
+          <img src="./client-maker.svg" alt="maker">
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <div class="hero-section">
+        <img src="./image-hero-desktop.png" alt="hero">
+      </div>
+    </div>
+  </main>
+  
+
+  <!-- Footer Attribution Section-->
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="www.upandstarttechnologies.com">Adnan Hamisi</a>.
+  </footer>
+</body>
+</html>
