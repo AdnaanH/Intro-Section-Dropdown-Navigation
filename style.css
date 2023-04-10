@@ -5,6 +5,10 @@
 }
 *{
     font-family: 'Epilogue', sans-serif;
+    list-style: none;
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--Medium-Gray);
 }
 body{
     position: relative;
@@ -22,7 +26,7 @@ header{
 }
 main{
     display: flex;
-    margin: 0;
+    margin: 1.5em 0;
 }
 .right-side{
     display: flex;
@@ -35,6 +39,7 @@ main{
     list-style: none;
 }
 .main-nav ul li{
+    display: flex;
     font-size: 1em;
     font-weight: 500;
     color: var(--Medium-Gray);
@@ -42,6 +47,50 @@ main{
 }
 .main-nav ul li:hover{
     color: var(--Almost-Black);
+}
+.dd-menu ul li{
+    padding: -10px;
+    display: flex;
+    margin: 0;
+}
+.dd-menu ul li:first-child{
+    margin-bottom: -35px;
+}
+.dd-menu ul li:nth-child(2){
+    margin-bottom: -35px;
+}
+.dd-menu ul li:nth-child(3){
+    margin-bottom: -35px;
+}
+.dd-menu ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 95px;
+    background-color: #fff;  
+}
+.hidden{
+    display: none;
+}
+.dd-menu-2 ul li{
+    margin: 0;
+    display: flex;
+    gap: 0.25em;
+}
+.dd-menu-2 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    position: absolute;
+    top: 35px;
+    left: 230px;
+}
+.dd-menu-2 ul p:first-child{
+    margin-bottom: -25px;
+}
+.dd-menu-2 ul p:nth-child(2){
+    margin-bottom: -25px;
 }
 .dropdown::after{
     content: url(./icon-arrow-down.svg);
@@ -51,9 +100,6 @@ main{
     content: url(./icon-arrow-up.svg);
     padding-left: 10px;
 }
-summary:hover{
-    color: var(--Almost-Black);
-}
 .left-side{
     display: flex;
     gap: 1em;
@@ -61,17 +107,23 @@ summary:hover{
 .login{
     border: none;
     background-color: transparent;
+    color: var(--Medium-Gray);
+    font-weight: 500;
+    cursor: pointer;
 }
 .signup{
     padding: 5px;
     width: 6em;
+    height: 2.5em;
     border-radius: 8px;
+    font-weight: 500;
     border: 2px solid var(--Medium-Gray);
     color: var(--Medium-Gray);
     background-color: transparent;
+    cursor: pointer;
 }
 .container{
-    margin: 20px auto;
+    margin: 50px auto;
     display: flex;
     gap: 4em;
     width: 90%;
@@ -85,7 +137,7 @@ summary:hover{
 .content h1{
     font-weight: 700;
     color: var(--Almost-Black);
-    font-size: 4em;
+    font-size: 4.7em;
     line-height: 0.8em;
 }
 .content{
@@ -95,9 +147,9 @@ summary:hover{
 }
 .content p{
     font-weight: 500;
-    font-size: 1.1em;
+    font-size: 1.15em;
     color: var(--Medium-Gray);
-    width: 20em;
+    width: 25em;
 }
 .hero-section{
     width: 40%;
@@ -111,12 +163,23 @@ summary:hover{
     border-radius: 12px;
     color: var(--Almost-White);
     width: 130px;
-    height: 40px;
+    height: 45px;
     border: none;
+    font-weight: 700;
     cursor: pointer;
 }
 .learn-mre:hover{
     background-color: var(--Almost-White);
     border: 2px solid var(--Almost-Black);
     color: var(--Medium-Gray);
+}
+.clients{
+    width: 25em;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+.clients img{
+    width: 100px;
+    height: 30px;
 }
