@@ -27,32 +27,36 @@
   <header>
     <!-- Logo & Main Nav Area-->
     <div class="right-side">
-      <img src="./logo.svg" alt="logo">
+      <div class="logo">
+        <img src="./logo.svg" alt="logo">
+      </div>
       <div class="main-nav">
-        <ul>
-          <li class="nav dropdown"><span>Features</span>
+        <ul >
+          <li class="nav dropdown">Features
             <!-- Drop Down Menu 1 Start -->
-            <div class="dd dd-menu hidden">
+            <div class="dd hidden">
               <ul>
                 <li><img src="./icon-todo.svg" alt="to do">Todo List</li>
                 <li><img src="./icon-calendar.svg" alt="calender">Calendar</li>
                 <li><img src="./icon-reminders.svg" alt="reminders">Reminders</li>
                 <li><img src="./icon-planning.svg" alt="planning">Planning</li>
-              </ul>
-            </div>
+              </ul>  
+            </div>           
             <!-- Drop Down Menu 1 End -->
+            <img class="dd-icon" src="./icon-arrow-down.svg" alt="">
           </li>  
                            
-          <li class="nav dropdown"><span>Company</span> 
+          <li class="nav dropdown">Company 
             <!-- Drop Down Menu 2 Start -->
-            <div class="dd dd-menu-2 hidden">
-              <ul">
-                <p>History</p>
-                <p>Our Team</p>
-                <p>Blog</p>
+            <div class="dd hidden">
+              <ul>
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
               </ul>
             </div>
             <!-- Drop Down Menu 2 End -->
+            <img class="dd-icon" src="./icon-arrow-down.svg" alt="">
           </li>
             
           <li class="nav">Careers</li>
@@ -63,8 +67,8 @@
 
     <!-- LogIn & SignUp Area -->
     <div class="left-side">
-      <button class="login">Login</button>
-      <button class="signup">Register</button>
+      <button class="login-btn">Login</button>
+      <button class="signup-btn">Register</button>
     </div>
   </header>
   <main>
@@ -99,12 +103,6 @@
       </div>
     </div>
   </main>
-  
-
-  <!-- Footer Attribution Section-->
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="www.upandstarttechnologies.com">Adnan Hamisi</a>.
-  </footer>
+  <script src="./app.js"></script>
 </body>
 </html>
